@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>初见LESS</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+    	var pixelRatio = 1/ window.devicePixelRatio;
+    	document.write('<meta name="viewport" content="width=deviceWidth,initial-scale='+pixelRatio+',maximum-scale='+pixelRatio+',minimum-scale='+pixelRatio+',user-scalable=no">');
+    	var html = document.getElementsByTagName('html')[0];
+    	html.style.fontSize = html.getBoundingClientRect().width / 16 + 'px';
+    </script>
+    <!--固定元素定位内容中有input的话，会导致触发键盘导致固定定位错位-->
+</head>
+<body>
+	<header class="head_box">
+		<a href="" class="btn_type"></a>
+		<div class="search_box">
+			<form action="" class="search_form">
+				<!--<i class="ico_search"></i>-->
+				<input type="text" class="search_input" placeholder="xxxxxx" />
+			</form>
+		</div>
+		<a href="" class="shop_car"></a>
+	</header>
+	<section class="warp">
+		<ul class="banner">
+			<li class="item">
+				<img src="img/banner.jpg" alt="" />
+			</li>
+		</ul>
+		<nav class="nav clerafix">
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+			<a href="" class="nav_item">
+				<img src="img/ico-nav.jpg" />
+				<strong class="nav_title">大聚会</strong>
+			</a>
+		</nav>
+	</section>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/*reset*/
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+// less
+// 定义rem大小并设置单位
+@rem:40rem;
+/*工具样式*/
+.clerafix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*框架搭建*/
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-size: 20/@rem;
+    font-family: Arial,Helvetica,STHeiTi,sans-serif;
+}
+// 去掉a标签遮罩层
+a{
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+// ios中表单元素圆角问题解决
+input {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* 主题部分*/
+.head_box{
+    width: 100%;
+    height: 74/@rem;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    background-color: #fabc09;
+    .btn_type{
+        float: left;
+        width: 78/@rem;
+        height: 74/@rem;
+        background: url(../img/ico-type.jpg) no-repeat 22/@rem 10/@rem;
+        background-size: 33/@rem 55/@rem;
+    }
+    .search_box{
+        width: 480/@rem;
+        height: 74/@rem;
+        float: left;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            height: 23/@rem;
+            width: 22/@rem;
+            top: 28/@rem;
+            left: 16/@rem;
+            background: url(../img/ico-search.jpg) no-repeat;
+            background-size: 22/@rem 23/@rem;   
+        }
+        .search_form {
+            height:50/@rem;
+            padding-top:14/@rem;
+            .search_input {
+                float: left;
+                width: 480/@rem;
+                height: 50/@rem;
+                font-size: 20/@rem;
+                padding-left: 51/@rem;
+                border-radius: 6/@rem;
+                box-sizing: border-box;
+               background-color: #d5dba9;
+            }
+        }
+    }
+    .shop_car{
+            float: left;
+            width: 82/@rem;
+            height: 74/@rem;
+            background: url(../img/ico-shopCar.jpg) no-repeat 17/@rem 8/@rem;
+            background-size:50/@rem 56/@rem;
+        }
+}
+.warp{
+    margin-top: 74/@rem;
+    height: 4000px;
+    width: 100%;
+    .banner{
+        width: 100%;
+        height: 272/@rem;
+        img{
+            width: 100%;
+        }
+    }
+    .nav{
+        width: 100%;
+        padding: 18/@rem 30/@rem 2/@rem 30/@rem;
+        box-sizing: border-box;
+        .nav_item{
+            text-align: center;
+            float: left;
+            width: 20%;
+            height: 114/@rem;
+            margin-bottom: 8/@rem;
+            img{
+               width: 68/@rem;
+               height: 70/@rem; 
+            }
+            .nav_title{
+                display: block;
+                font-weight: normal;
+                line-height: 44/@rem;
+            }
+        }
+    }
+}

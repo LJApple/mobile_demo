@@ -1,0 +1,39 @@
+必须在统一网络环境中才能访问打开的页面
+像素比：d
+
+视口：viewport
+content="width=device-width",
+
+需求：
+1、让也面的宽度跟着访问的设备的宽度一致
+2、不想让用户进行页面缩放
+3、我想控制像素比 让1px做1px的事情
+1：1像素还原
+2）尽可能控制
+动态控制像素比：
+获取像素比
+var pixeRatio = 1/ pixewindow.deviecePixelRatio
+document.write('<meta name = 'viewport' contetn="">');
+
+initial-scale = 1.0 初始比例
+maximum-sacle = 1.0 
+minimum-scale = 1.0
+user-scalable 是否允许缩放
+
+给750的设计图怎么向上兼容？
+
+px:固定单位
+缺点：任何情况下
+% 高度不好控制
+em：每个容器大小不一致，那么计算方式非常麻烦
+
+rem：r = root  em:字体大小 font-size
+只依赖于html字体大小
+动态设置字体大小：
+// 尺寸越大，字体大小越大，尺寸越小，则字体越小
+// 获取屏幕宽度
+var htmm = document.getElementByTagNme('html');
+var pageWidth = html.getBoundingClientRect().width;
+
+// 屏幕宽度 / 数值 = 结果
+html.style.fontSize = pageWith/16+'px';
