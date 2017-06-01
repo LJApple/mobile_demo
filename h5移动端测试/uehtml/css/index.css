@@ -1,0 +1,338 @@
+/*reset*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px "微软雅黑";
+  background-color: #f1f1f1;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+/*public*/
+.dispalyNone {
+  display: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.icon_top {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: #999a9b;
+  cursor: pointer;
+}
+.icon_bottom {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-bottom-color: #999a9b;
+  cursor: pointer;
+}
+/*css3制作小图标*/
+.searchImg {
+  height: 14px;
+  width: 15px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.searchImg:before,
+.searchImg:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.searchImg:before {
+  width: 14px;
+  height: 14px;
+  border: 3px #999a9b solid;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.searchImg:hover:before {
+  border: 3px white solid;
+}
+.searchImg:hover:after {
+  background: #FFFFFF;
+}
+.searchImg:after {
+  width: 3px;
+  height: 6px;
+  background: #999a9b;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  top: 10px;
+  left: 12px;
+}
+.searchImg:after::hover {
+  background: white;
+}
+/*框架搭建*/
+.head_box {
+  width: 100%;
+  position: fixed;
+  background-color: #323436;
+  height: 50px;
+  top: 0;
+  z-index: 5;
+}
+.head_box .logo {
+  height: 50px;
+  float: left;
+}
+.head_box .head_tab {
+  float: left;
+  height: 50px;
+  margin-left: 20px;
+}
+.head_box .head_tab .item {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+}
+.head_box .head_tab .item a {
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #999a9b;
+}
+.head_box .head_tab .item a .icon_more {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: #999a9b;
+}
+.head_box .head_tab .item a:hover {
+  background-color: black;
+  color: white;
+}
+.head_box .head_tab .item ul {
+  background-color: #323436;
+}
+.head_box .head_tab .active a {
+  background-color: black;
+  color: white;
+}
+.head_box .head_right {
+  height: 50px;
+  float: right;
+}
+.head_box .head_right .loginAreg {
+  float: left;
+  margin-top: 10px;
+  display: block;
+}
+.head_box .head_right .loginAreg button {
+  border: none;
+  height: 30px;
+  float: left;
+  padding: 0 20px;
+}
+.head_box .head_right .loginAreg .login {
+  background-color: #505050;
+  color: #999a9b;
+}
+.head_box .head_right .loginAreg .register {
+  background-color: #6bc30d;
+  color: white;
+}
+.head_box .head_right .searchImg {
+  float: left;
+  margin-top: 18px;
+  margin-right: 30px;
+}
+.head_banner {
+  height: 200px;
+  position: relative;
+  top: 50px;
+  padding-top: 40px;
+  background: url(../img/banner.jpg) fixed;
+  text-align: center;
+}
+.head_banner .count_time span {
+  display: inline-block;
+}
+.head_banner .count_time .time {
+  font-size: 40px;
+  color: #00ffea;
+  margin-top: -10px;
+}
+.head_banner .count_time .timing {
+  color: #729cb7;
+}
+.head_banner .count_time .timing_div {
+  border-right: 1px solid #385b72;
+  height: 40px;
+  width: 1px;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.head_banner .title {
+  font-size: 13px;
+  color: #729cb7;
+}
+.head_banner .banner_url {
+  margin: 20px auto;
+  width: 230px;
+  height: 30px;
+  background-color: #ff8a00;
+}
+.head_banner .banner_url a {
+  color: white;
+  height: 30px;
+  line-height: 30px;
+}
+.nav_sel {
+  float: left;
+  width: 56px;
+  height: 50px;
+  margin-left: 24px;
+  background: #454648 url(../img/ico-nav.jpg) no-repeat 20px 20px;
+  cursor: pointer;
+}
+.nav_sel .mnnav_div {
+  position: absolute;
+  width: 350px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  top: 50px;
+}
+.nav_sel .mnnav_div a {
+  font-size: 14px;
+  color: #2b2b2b;
+}
+.nav_sel .mnnav_div a:hover {
+  color: #1f8902;
+}
+.nav_sel .mnnav_div > a {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 15px 0;
+  text-indent: 10px;
+}
+.nav_sel .mnnav_div p {
+  margin-top: 10px;
+  width: 350px;
+  background-color: #f2f2f2;
+  padding: 18px 0px;
+  margin: 20px -20px -22px -20px;
+}
+.nav_sel .mnnav_div p a {
+  margin-left: 30px;
+}
+.sooptions {
+  height: 60px;
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+  margin-top: 50px;
+  z-index: 3;
+  background-color: #f7f8f8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.sooptions .sooptions_tab .item {
+  height: 40px;
+  width: 126px;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.sooptions .sooptions_tab .item .item_span {
+  background: url(../img/icon.png);
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+.sooptions .sooptions_tab .item .tuijian {
+  width: 12px;
+  height: 16px;
+  background-position: -128px -524px;
+}
+.sooptions .sooptions_tab .item .yanse {
+  width: 11px;
+  height: 16px;
+  background-position: -251px -657px;
+}
+.sooptions .sooptions_tab .item .suoyouzhe {
+  width: 16px;
+  height: 16px;
+  background-position: -208px -388px;
+}
+.sooptions .sooptions_tab .active {
+  background-color: #edeeee;
+}
+.sooptions .news {
+  float: left;
+}
+.sooptions .news img {
+  height: 13px;
+  width: 13px;
+  float: left;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.sooptions .news .news_desc {
+  float: left;
+}
+.sooptions .news .news_desc .item {
+  height: 40px;
+  width: 535px;
+  line-height: 40px;
+}
+.content {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content div {
+  margin-bottom: 46px;
+}
+.content .item {
+  width: 280px;
+  height: 270px;
+  background-color: pink;
+}
+.content .big_item {
+  width: 580px;
+  height: 270px;
+  background-color: gold;
+}

@@ -37,3 +37,29 @@ var pageWidth = html.getBoundingClientRect().width;
 
 // 屏幕宽度 / 数值 = 结果
 html.style.fontSize = pageWith/16+'px';
+
+伪类选择器：
+nth-chil不计算文本节点
+nth-last-of-type(1)
+first-of-type{
+	background
+}
+only-of-type
+
+uehtml:响应式，弹性盒模型，bootstrap
+
+data
+
+属性选择器：
+div[data-userId $= "z"] 尾部
+div[data-userId ^= "z"] 前
+div[data-userId *= "z"]  包含
+
+自定义字体名称
+@font-face {
+	font-family:'Glyph'
+	src:字体路径
+}
+
+滤镜 filter
+-web-filter:grayscale(1);// 灰色 0-1  %0-100%

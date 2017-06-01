@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	<body>
+		<header class="clearfix">
+			<div class="head_box">
+				<div class="container clearfix">
+					<div class="logo">
+						<a href=""><img src="img/logo.png" /></a>
+					</div>
+					<div  class="nav_sel visible-md-inline-block" id="mnnav">
+						<div class="dispalyNone mnnav_div" id="mnnavlabel">
+							<a class="mnnsub mnnsubd" href="http://www.uehtml.com/list/">发&nbsp;&nbsp;&nbsp;现</a>
+							<a class="mnnsub mnnsubs" href="http://www.uehtml.com/designers?sort=rec">设计师</a>
+							<a class="mnnsub" href="http://www.uehtml.com/list/bangmang/">帮帮忙</a>
+							<p id="mnnfoot">
+								<a href="http://so.uehtml.com/" target="_blank">网页设计师导航<span id="sohot"></span></a>
+								<a href="http://mh.uehtml.com/" target="_blank">漫画</a>
+								<a href="http://www.uelike.com" target="_blank">优艺客</a>
+							</p>
+						</div>
+					</div>
+					<ul class="head_tab visible-lg-inline-block">
+						<li class="item active"><a href="">发现</a></li>
+						<li class="item"><a href="">文章</a></li>
+						<li class="item"><a href="">设计师</a></li>
+						<li class="item"><a href="">帮帮忙</a></li>
+						<li class="item" id="readMore"><a href=""><span class="word_more">更多</span><span class="icon_more"></span></a>
+							<ul class="dispalyNone" id="readMenu">
+								<li><a href="">文章</a></li>
+								<li><a href="">设计师</a></li>
+								<li><a href="">帮帮忙</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="head_right">
+					<span class="searchImg"></span>
+					<div class="loginAreg">
+						<button class="login">登录</button>
+						<button class="register">注册</button>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="head_banner" id="head_banner">
+				<p class="count_time">
+					<span class="time">06</span>
+					<span class="timing">天</span>
+					<span class="timing_div"></span>
+					<span class="time">01</span>
+					<span class="timing">时</span>
+					<span class="timing_div"></span>
+					<span class="time">53</span>
+					<span class="timing">分</span>
+					<span class="timing_div"></span>
+					<span class="time">40</span>
+					<span class="timing">秒</span>
+				</p>
+				<p class="title">周二，抢U码！送个人网站！有码！任性！嫑钱！</p>
+				<p class="banner_url"><a href="">抢U码</a></p>
+			</div>
+			<div  class="sooptions clearfix" id="sooptions">
+				<div class="container clearfix">
+					<ul  class="sooptions_tab">
+					<li class="item active">行业<span class="icon_top"></span></li>
+					<li class="item"><span class="tuijian item_span"></span>最新推荐<span class="icon_top"></span></li>
+					<li class="item"><span class="yanse item_span"></span>颜色<span class="icon_top"></span></li>
+					<li class="item"><span  class="suoyouzhe item_span"></span>所有者<span class="icon_top"></span></li>
+				</ul>
+				<div class="news visible-lg-inline-block">
+					<img src="img/ico-list.jpg"  alt=""/>
+					<ul class="news_desc ">
+						<li class="item"><a href="" target="_blank">尼亚</a>喜欢了<a href="" target="_blank">PENTA</a> 19分钟前</li>
+						<li class="item dispalyNone"><a href="" target="_blank">尼亚</a>喜欢了<a href="" target="_blank">PENTA</a> 19分钟前</li>
+						<li class="item dispalyNone"><a href="" target="_blank">尼亚</a>喜欢了<a href="" target="_blank">PENTA</a> 19分钟前</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</header>
+		<section class="container content">
+			<div class="big_item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<!---->
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<!---->
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<!---->
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<!---->
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<!---->
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</section>
+		<script>
+			
+			window.onload = function(){
+				var oReadMore = document.getElementById("readMore");
+				var oReadMenu = document.getElementById('readMenu');
+				var oSooptions = document.getElementById('sooptions');
+				var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+				var oHead_banner = document.getElementById('head_banner');
+				var oMnnavlabel = document.getElementById("mnnavlabel");
+				var oMnnav = document.getElementById("mnnav");
+				oReadMore.addEventListener("mouseover",function(){
+					oReadMenu.style.display = "block";
+				},false);
+				readMore.addEventListener("mouseleave",function(){
+					oReadMenu.style.display = "none";
+				},false);
+				oMnnav.addEventListener("mouseover",function(){
+					oMnnavlabel.style.display = "block";
+				},false);
+				oMnnav.addEventListener("mouseleave",function(){
+					oMnnavlabel.style.display = "none";
+				},false);
+				window.onscroll = function(){
+					var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+					console.log(scrollTop)
+					if(scrollTop >=199){
+						oSooptions.style.position = 'fixed';
+						oSooptions.style.top = "0px";
+					} else {
+						oSooptions.style.position = 'relative'
+					}
+				}
+			}
+			
+		</script>
+	</body>
+</html>
