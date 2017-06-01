@@ -122,11 +122,15 @@
 				var oHead_banner = document.getElementById('head_banner');
 				var oMnnavlabel = document.getElementById("mnnavlabel");
 				var oMnnav = document.getElementById("mnnav");
+				var oIcon_more = document.getElementsByClassName("icon_more")[0];
+				console.log(oIcon_more,oMnnav)
 				oReadMore.addEventListener("mouseover",function(){
 					oReadMenu.style.display = "block";
+					oIcon_more.setAttribute('class','icon_more icon_more_up');
 				},false);
 				readMore.addEventListener("mouseleave",function(){
 					oReadMenu.style.display = "none";
+					oIcon_more.setAttribute('class','icon_more');
 				},false);
 				oMnnav.addEventListener("mouseover",function(){
 					oMnnavlabel.style.display = "block";
